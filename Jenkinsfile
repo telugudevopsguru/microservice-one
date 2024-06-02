@@ -17,7 +17,7 @@ pipeline {
         stage('Clone the repo') {
             steps {
                 script {
-                    gitClone(params.branchName, 'github-crdenatils', 'https://github.com/telugudevopsguru/microservice-one.git')
+                    gitClone(params.branchName, 'github-credentials', 'https://github.com/telugudevopsguru/microservice-one.git')
                 }
             }
         }
