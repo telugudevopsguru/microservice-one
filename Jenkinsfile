@@ -11,7 +11,9 @@ pipeline {
         }
 
         stage ('Build the Code'){
+            steps{
             buildCode()
+            }
 
         }
         
