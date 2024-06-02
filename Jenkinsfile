@@ -10,7 +10,7 @@ pipeline {
             }
         }
 
-        stage (''Build the Code){
+        stage ('Build the Code'){
             buildCode()
 
         }
