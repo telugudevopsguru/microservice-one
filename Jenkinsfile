@@ -9,5 +9,11 @@ pipeline {
                 gitClone('main', 'github-credentials', 'https://github.com/telugudevopsguru/microservice-one.git')
             }
         }
+
+        stage (''Build the Code){
+            buildCode()
+
+        }
+        
     }
 }
