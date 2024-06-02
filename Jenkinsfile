@@ -30,7 +30,7 @@ pipeline {
         stage('Build and Tag Docker Image') {
             steps {
                 script {
-                    dockerBuild(params.accountNumber, params.region, 'params.ecrRepoName')
+                    dockerBuild(params.accountNumber, params.region, params.ecrRepoName)
                 }
             }
         }
