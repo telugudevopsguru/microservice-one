@@ -12,7 +12,7 @@ pipeline {
     stages {
         stage('Clone the repo') {
             steps {
-              git branch: 'main', changelog: false, credentialsId: 'Github_credentails', poll: false, url: 'https://github.com/MooleMuraliDharaReddy/java-app.git'
+              git branch: 'main', changelog: false, credentialsId: 'Github_credentails', poll: false, url: 'https://github.com/telugudevopsguru/microservice-one.git'
             }
         }
         
