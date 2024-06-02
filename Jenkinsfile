@@ -27,6 +27,16 @@ maven 'Maven-3.9.6'
                 }
             }
         }
+
+        stage('Push to AWS ECR') {
+            steps {
+                script {
+                    dockerImagePush('590184088314', 'us-east-1', 'microservice-one')
+                }
+            }
+        } 
+
+        
         
     }
 }
